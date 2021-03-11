@@ -1,5 +1,8 @@
 (ns sdff.dsl.parallel-combine
-  (:require [clojure.core.async :as a]))
+  "We can arrange to use two functions in parallel, then combine their
+  results with specified combiner function. The `parallel-combine` is
+  our combiner function.")
+
 
 (defn parallel-combine-v1
   [h f g]
