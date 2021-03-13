@@ -1,4 +1,4 @@
-(ns sdff.dsl.01-compose
+(ns sdff.dsl.combinators.01-compose
   (:require [clojure.test :as t]
             [sdff.arity :as arity]))
 

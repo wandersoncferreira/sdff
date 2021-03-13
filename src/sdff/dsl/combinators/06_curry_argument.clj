@@ -1,4 +1,4 @@
-(ns sdff.dsl.06-curry-argument 
+(ns sdff.dsl.combinators.06-curry-argument 
   (:require [sdff.arity :as arity]))
 
 (defn list-insert

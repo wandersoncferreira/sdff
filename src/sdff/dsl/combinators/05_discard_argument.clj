@@ -1,4 +1,4 @@
-(ns sdff.dsl.05-discard-argument
+(ns sdff.dsl.combinators.05-discard-argument
   (:require [sdff.arity :as arity]))
 
 (defn list-remove

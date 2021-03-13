@@ -1,4 +1,4 @@
-(ns sdff.dsl.03-spread-combine
+(ns sdff.dsl.combinators.03-spread-combine
   (:require [sdff.arity :as arity]))
 
 ;;; sneaky way to define the arity of the function

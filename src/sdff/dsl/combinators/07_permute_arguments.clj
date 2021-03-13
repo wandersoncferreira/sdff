@@ -1,4 +1,4 @@
-(ns sdff.dsl.07-permute-arguments 
+(ns sdff.dsl.combinators.07-permute-arguments 
   (:require [sdff.arity :as arity]
             [sdff.scheme-bridge :as scheme]))
 
