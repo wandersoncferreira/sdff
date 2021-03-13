@@ -25,15 +25,17 @@
   [lst]
   (apply str lst))
 
+(def ^:private append-map mapcat)
+
 (defn r:quote
   [string]
   (r:seq
    (list->string
-    (mapcat (fn [_char]
-              (if (contains? chars-needing-quoting _char)
-                (list \\ _char)
-                (list _char)))
-            string))))
+    (append-map (fn [_char]
+                  (if (contains? chars-needing-quoting _char)
+                    (list \\ _char)
+                    (list _char)))
+                string))))
 
 (defn- pair?
   "Ugh!"
@@ -45,8 +47,8 @@
   (if (pair? exprs)
     (apply r:seq
            (cons (first exprs)
-                 (mapcat (fn [expr] (list "\\|" expr))
-                         (rest exprs))))
+                 (append-map (fn [expr] (list "\\|" expr))
+                             (rest exprs))))
     (r:seq (first exprs))))
 
 (def ^:private append concat)
@@ -129,11 +131,11 @@
   [string]
   (list->string
    (append (list \')
-           (mapcat (fn [_char]
-                     (if (= _char \')
-                       (list \' \\ _char \')
-                       (list _char)))
-                   (string->list string))
+           (append-map (fn [_char]
+                         (if (= _char \')
+                           (list \' \\ _char \')
+                           (list _char)))
+                       (string->list string))
            (list \'))))
 
 (defn bourne-shell-grep-command-string
