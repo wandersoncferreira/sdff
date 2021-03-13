@@ -35,3 +35,9 @@
 
 ;;; interesting explanation about Multivalue design in Scheme
 ;;; https://stackoverflow.com/questions/45379116/what-is-the-benefit-to-use-let-values-instead-of-let
+
+
+(defn list-ref
+  "Returns the element of lst at position pos"
+  [lst pos]
+  (nth lst pos))

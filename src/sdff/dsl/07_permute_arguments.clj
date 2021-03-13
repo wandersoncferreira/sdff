@@ -1,16 +1,14 @@
 (ns sdff.dsl.07-permute-arguments 
-  (:require [sdff.arity :as arity]))
+  (:require [sdff.arity :as arity]
+            [sdff.scheme-bridge :as scheme]))
 
-(defn list-ref
-  "Returns the element of lst at position pos"
-  [lst pos]
-  (nth lst pos))
 
 (defn make-permutation
   [permspec]
   (defn the-permuter [lst]
-    (map (fn [p] (list-ref lst p)) permspec))
+    (map (fn [p] (scheme/list-ref lst p)) permspec))
   the-permuter)
+
 
 (defn permute-arguments
   [& permspec]
