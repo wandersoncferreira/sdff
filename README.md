@@ -16,4 +16,4 @@ This repo is for Study purposes.
 
 ## Thoughts
 
-- [Small Combinator Libraries](docs/small-combinator-lib.md)
+- [Small Combinator Library](docs/small-combinator-lib.md)
