@@ -57,7 +57,7 @@
         (assert (= (count args) t))
         (let [fv (apply f (take n args))
               gv (apply g (drop n args))]
-          (apply scheme/values (concat fv gv))))
+          (apply scheme/values (scheme/append fv gv))))
       (arity/restrict-arity the-combination-spread-apply t))))
 
 (defn spread-combine-g
@@ -68,8 +68,8 @@
 (comment
   
  ((spread-combine-g list
-                    (fn [x y] [x y])
-                    (fn [u v w] [w v u]))
+                    (fn [x y] (scheme/values x y))
+                    (fn [u v w] (scheme/values u v w)))
   'a 'b 'c 'd 'e)
  
  ;; => (a b e d c)
