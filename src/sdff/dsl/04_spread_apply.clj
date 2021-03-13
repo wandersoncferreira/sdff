@@ -1,8 +1,8 @@
-(ns sdff.dsl.spread-apply
+(ns sdff.dsl.04-spread-apply
   "To be able to abstract the pattern of `spread-combine` and
   `parallel-combine` we need to be able to return multiple values
   from the combination of F and G"
-  (:require [sdff.dsl.arity :as arity]
+  (:require [sdff.arity :as arity]
             [sdff.scheme-bridge :as scheme]))
 
 

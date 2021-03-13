@@ -1,4 +1,4 @@
-(ns sdff.dsl.arity)
+(ns sdff.arity)
 
 (def arity-table
   (atom {}))

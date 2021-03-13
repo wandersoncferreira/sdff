@@ -1,5 +1,5 @@
-(ns sdff.dsl.curry-argument 
-  (:require [sdff.dsl.arity :as arity]))
+(ns sdff.dsl.06-curry-argument 
+  (:require [sdff.arity :as arity]))
 
 (defn list-insert
   [lst index value]

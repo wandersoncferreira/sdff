@@ -1,9 +1,9 @@
-(ns sdff.dsl.parallel-combine
+(ns sdff.dsl.02-parallel-combine
   "We can arrange to use two functions in parallel, then combine their
   results with specified combiner function. The `parallel-combine` is
   our combiner function."
   (:require [clojure.test :as t]
-            [sdff.dsl.arity :as arity]
+            [sdff.arity :as arity]
             [sdff.scheme-bridge :as scheme]))
 
 

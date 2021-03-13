@@ -1,5 +1,5 @@
-(ns sdff.dsl.discard-argument
-  (:require [sdff.dsl.arity :as arity]))
+(ns sdff.dsl.05-discard-argument
+  (:require [sdff.arity :as arity]))
 
 (defn list-remove
   [lst index]

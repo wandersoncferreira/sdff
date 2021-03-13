@@ -1,6 +1,6 @@
-(ns sdff.dsl.compose
+(ns sdff.dsl.01-compose
   (:require [clojure.test :as t]
-            [sdff.dsl.arity :as arity]))
+            [sdff.arity :as arity]))
 
 (defn compose
   [f g]

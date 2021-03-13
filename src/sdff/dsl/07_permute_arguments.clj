@@ -1,5 +1,5 @@
-(ns sdff.dsl.permute-arguments 
-  (:require [sdff.dsl.arity :as arity]))
+(ns sdff.dsl.07-permute-arguments 
+  (:require [sdff.arity :as arity]))
 
 (defn list-ref
   "Returns the element of lst at position pos"
