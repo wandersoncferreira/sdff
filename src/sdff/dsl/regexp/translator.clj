@@ -1,4 +1,4 @@
-(ns sdff.dsl.regexp.core 
+(ns sdff.dsl.regexp.translator
   (:require [clojure.test :as t]))
 
 (defn r:dot
