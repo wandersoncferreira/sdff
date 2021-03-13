@@ -1,5 +1,10 @@
 (ns sdff.scheme-bridge)
 
+;;; I decided to move forward in the book and leave CSP in Clojure for
+;;; later. These functions were made to 'mimic' default behaviors from
+;;; Scheme. The idea is to keep the code from book with similar
+;;; structure and perform the necessary adjustments here.
+
 ;;; implement call-with-values, and values - some ideas from here
 ;;; https://stackoverflow.com/questions/16674214/how-to-implement-call-with-values-to-match-the-values-example-in-r5rs
 
