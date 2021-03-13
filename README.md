@@ -16,4 +16,7 @@ This repo is for Study purposes.
 
 ## Thoughts
 
+This section has some thoughts about the content of the book either
+implementation of functions as the concepts behind them.
+
 - [Small Combinator Library](docs/small-combinator-lib.md)
